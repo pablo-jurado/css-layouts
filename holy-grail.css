@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  background: #2196f3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row;
+  height: 78vh;
+}
+
+.content {
+  padding: 20px;
+  flex: 4;
+}
+
+nav, aside {
+  background: rgba(30, 150, 240, .5);
+  padding: 20px;
+  flex: 1;
+}
