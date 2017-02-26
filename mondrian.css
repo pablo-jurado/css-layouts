@@ -7,6 +7,8 @@
   width: 50%;
 }
 
+/*  ------>   basic wireframing layout   <-----    */
+
 .frame-edge-left, .frame-edge-right  {
   flex: 1;
 }
@@ -34,6 +36,7 @@
 .row-box {
   flex: 1;
   border-right: 2px solid black;
+  height: 100%;s
 }
 
 .row-box:last-child {
@@ -61,19 +64,28 @@
   width: 50%;
 }
 
-.quarter-2 .column .box:nth-child(2),
-.quarter-2 .column .box:nth-child(3),
-.quarter-2 .column .box:nth-child(5),
-.quarter-2 .column .box:nth-child(6) {
+/*  ------>   left to rigth columns   <-----    */
+
+.frame-edge-left .column .box:nth-child(1) {
+  border-right-color: white;
+}
+
+.frame-edge-left .column .box:nth-child(5) {
+  border-right-color: white;
+}
+
+.frame-edge-left .column .box:nth-child(2) {
   flex: 2;
 }
 
-.quarter-3 .column .box:nth-child(1),
-.quarter-3 .column .box:nth-child(2),
-.quarter-3 .column .box:nth-child(4),
-.quarter-3 .column .box:nth-child(5) {
-  flex: 2;
+.frame-edge-left .column .box:nth-child(3) {
+  flex: 3;
 }
+
+.frame-edge-left .column .box:nth-child(4) {
+  flex: 3;
+}
+
 
 .quarter-1 .column .box:nth-child(1) .inside-box {
   width: 20%;
@@ -98,27 +110,54 @@
 
 }
 
-.frame-edge-left .column .box:nth-child(1) {
-  border-right-color: white;
-}
-
-.frame-edge-left .column .box:nth-child(5) {
-  border-right-color: white;
-}
-
-.frame-edge-left .column .box:nth-child(2) {
+.quarter-2 .column .box:nth-child(2),
+.quarter-2 .column .box:nth-child(3),
+.quarter-2 .column .box:nth-child(5),
+.quarter-2 .column .box:nth-child(6) {
   flex: 2;
 }
 
-.frame-edge-left .column .box:nth-child(3) {
+.quarter-3 .column .box:nth-child(1),
+.quarter-3 .column .box:nth-child(2),
+.quarter-3 .column .box:nth-child(4),
+.quarter-3 .column .box:nth-child(5) {
+  flex: 2;
+}
+
+.quarter-4 .column .box:nth-child(2),
+.quarter-4 .column .box:nth-child(3) {
+  flex: 2;
+}
+
+.quarter-4 .column .box:nth-child(4) {
+  flex: 4;
+}
+
+.quarter-4 .column .box:nth-child(1),
+.quarter-4 .column .box:nth-child(5) {
+  border-right-color: white;
+}
+
+.quarter-4 .column .box:nth-child(5) .inside-box {
+  width: 80%;
+}
+
+
+.frame-edge-right .column .box:nth-child(2),
+.frame-edge-right .column .box:nth-child(3) {
   flex: 3;
 }
 
-.frame-edge-left .column .box:nth-child(4) {
-  flex: 3;
+.frame-edge-right .column .box:nth-child(4) {
+  flex: 2;
 }
 
-/* ////// colors ////// */
+.frame-edge-right .column .box:nth-child(1),
+.frame-edge-right .column .box:nth-child(5) {
+  border-left-color: white;
+}
+
+/*  ------>   colors   <-----    */
 .yellow {
   background: #ffeb3b;
 }
