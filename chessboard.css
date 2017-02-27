@@ -1,15 +1,22 @@
-
 .row {
-  width: 50%;
   display: flex;
   flex-flow: row;
   margin: 0 25%;
 }
 
 .row div {
-  height: 70px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
   flex: 1;
+  height: 10vh;
+}
+
+.row div:last-child {
+  border-right: 1px solid black;
+}
+
+.row:first-child {
+  border-top: 1px solid black;
 }
 
 .row div:nth-child(odd) {
