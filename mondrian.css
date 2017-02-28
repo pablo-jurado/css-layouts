@@ -1,9 +1,13 @@
+body {
+  background-image: url(back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .wrapper {
-  border: 1px solid black;
+  border: 5px solid black;
   display: flex;
   height: 50vh;
-  margin-top: 50px;
-  margin: 50px auto;
+  margin: 300px auto;
   width: 50%;
 }
 
