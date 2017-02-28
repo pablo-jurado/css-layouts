@@ -1,5 +1,9 @@
 body {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
   font-family: sans-serif;
+  height: 100vh;
   margin: 0;
 }
 
@@ -13,7 +17,7 @@ header, footer {
 .wrapper {
   display: flex;
   flex-flow: row;
-  height: 78vh;
+  height: 100%;
 }
 
 .content {
