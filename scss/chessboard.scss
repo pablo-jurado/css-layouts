@@ -1,0 +1,54 @@
+//--------------------------------------------------------//
+//  Variables
+//--------------------------------------------------------//
+$white-color: #ece2bf;
+$black-color: #2d211d;
+$border-default: 1px solid black;
+$box-height: 10vh;
+//--------------------------------------------------------//
+//  content
+//--------------------------------------------------------//
+body {
+  background-image: url(../img/wood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  box-shadow: 5px 10px 50px black;
+  box-sizing: border-box;
+  height: 80vh;
+  width: 80vh;
+  margin: 10vh auto;
+}
+
+.row {
+  display: flex;
+  flex-flow: row;
+  div {
+    background: $white-color;
+    border-bottom: $border-default;
+    border-left: $border-default;
+    flex: 1;
+    height: $box-height;
+  }
+  div:last-child {
+    border-right: $border-default;
+  }
+  div:nth-child(odd) {
+    background: $black-color;
+  }
+}
+
+.row:first-child {
+  border-top: $border-default;
+}
+
+.row-odd {
+  div {
+    background: $black-color;
+  }
+  div:nth-child(odd) {
+    background: $white-color;
+  }
+}
