@@ -1,0 +1,26 @@
+body {
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0; }
+  body header, body footer {
+    background: #0a6ebd;
+    padding: 20px;
+    text-align: center; }
+
+.wrapper {
+  display: flex;
+  flex-flow: row;
+  height: 100%; }
+  .wrapper .content {
+    background-color: #b2dbfb;
+    color: black;
+    flex: 4;
+    padding: 20px; }
+  .wrapper nav, .wrapper aside {
+    background: #2196f3;
+    flex: 1;
+    padding: 20px; }
